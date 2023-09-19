@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+}
+
+.mat-row,
+.mat-header-row {
+    background-color: #f5f5f5;
+}
+
+.mat-header-cell,
+.mat-cell {
+    padding: 8px;
+}
+
+.no-underline {
+    text-decoration: none;
+    background-color: white;
+}

@@ -1,0 +1,15 @@
+<section class="conteiner auth login">
+    <h3>{{message}}</h3>
+    <form [formGroup]="authForm" class="login">
+        <label for="username">Имя пользователя</label>
+        <input type="text" id="username" formControlName="username" required>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" formControlName="password" required>
+        <button type="submit" [disabled]="!authForm.valid" mat-button color="primary" (click)="onLoginButtonClick()">
+            Войти
+        </button>
+        <button type="submit" [disabled]="!authForm.valid" mat-button color="primary" (click)="onRegisterButtonClick()">
+            Зарегистрироваться
+        </button>
+    </form>
+</section>
