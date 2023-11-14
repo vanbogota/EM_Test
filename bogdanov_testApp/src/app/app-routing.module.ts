@@ -3,7 +3,6 @@ import { RouterModule, Routes, provideRouter, withComponentInputBinding } from '
 
 import { PostComponent } from './post/post.component';
 import { PostsComponent } from './posts/posts.component';
-import { SignupComponent } from './auth/signup/signup.component';
 import { authGuard } from './auth/auth.guard';
 import { LoginComponent } from './auth/login/login.component';
 
@@ -18,11 +17,6 @@ const routes: Routes = [
     path: 'login',
     title: 'Authorization',
     component: LoginComponent
-  },
-  {
-    path: 'signup',
-    title: 'Sign Up',
-    component: SignupComponent
   },
   {
     path: 'posts',

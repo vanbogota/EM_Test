@@ -1,4 +1,4 @@
-<section class="conteiner auth login">
+<section class="conteiner login">
     <h3>{{message}}</h3>
     <form [formGroup]="authForm" class="login">
         <label for="username">Имя пользователя</label>
@@ -9,7 +9,12 @@
             Войти
         </button>
         <button type="submit" [disabled]="!authForm.valid" mat-button color="primary" (click)="onRegisterButtonClick()">
-            Зарегистрироваться
+            Зарегистрироваться*
         </button>
     </form>
+    <div class="note">
+        * - придумывать уникальные логин и пароль не нужно, внесенные вами данные никуда не отправляются и хранятся
+        локально
+        в браузере.
+    </div>
 </section>

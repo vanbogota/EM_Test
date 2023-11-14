@@ -13,8 +13,7 @@ import { AppService } from 'src/app/services/app.service';
 })
 
 export class PostComponent {
-  @Input() id = '';
-  dataSource: MatTableDataSource<any> = new MatTableDataSource();
+  dataSource: MatTableDataSource<Post> = new MatTableDataSource();
   displayedColumns = ['userId', 'title', 'body'];
   post: Post | undefined;
 
@@ -29,7 +28,7 @@ export class PostComponent {
   }
 
   getPost(): void {
-    const id = parseInt(this.router.snapshot.paramMap.get(this.id)!, 10);
+    const id = parseInt(this.router.snapshot.paramMap.get('id')!, 10);
     this.service.getPostById(id)
       .subscribe(data => {
         this.post = data;

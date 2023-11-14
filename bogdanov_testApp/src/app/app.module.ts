@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
 import { HeaderComponent } from './header/header.component';
-import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { LoginComponent } from './auth/login/login.component';
     PostsComponent,
     PostComponent,
     HeaderComponent,
-    SignupComponent,
     LoginComponent
   ],
   imports: [

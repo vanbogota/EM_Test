@@ -1,4 +1,11 @@
-header {
-    margin: 1%;
-    top: 0;
+button {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+button:disabled {
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: white;
 }

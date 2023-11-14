@@ -53,7 +53,7 @@ export class LoginComponent {
         if (this.authService.isLoggedIn) {
           this.router.navigate(['/posts']);
         }
-        this.message = 'Такой пользователь уже существует'
+        this.message = 'Такой пользователь уже существует. Придумайте другое имя.'
       });
   }
 }

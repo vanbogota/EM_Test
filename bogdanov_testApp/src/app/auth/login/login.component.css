@@ -1,6 +1,30 @@
+h3 {
+    text-align: center;
+}
+
 .login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.conteiner {
+    box-sizing: border-box;
+    width: 480px;
+    height: 450px;
+    border-radius: 8%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.note {
+    padding: 1rem;
+    text-align: justify;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 480px) {
+    .conteiner {
+        width: 99%;
+    }
 }
